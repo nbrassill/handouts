@@ -54,3 +54,8 @@ library(ggplot2)
 
 ggplot(df, aes(x = factor(county), y = B19001_001)) +
   geom_boxplot()
+
+
+WRF <- read.csv(file = "~/handouts/SESYNC_WRFdataCSV.csv", header = TRUE, na.strings = NA)
+WRF <- read.csv(file = "~/handouts/SESYNC_WRFdataCSV.csv", header = TRUE, na.strings = NA)
+WRF

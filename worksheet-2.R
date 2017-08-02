@@ -1,9 +1,9 @@
 ## The Editor
 
-vals <- ...
+vals <- seq(1, 100)
 
-vals <- seq(...,
-            ...)
+vals <- seq(1,
+            100)
 
 ## Vectors
 
@@ -15,25 +15,25 @@ counts ...
 
 ## Factors
 
-education <- ...(c("college", "highschool", "college", "middle"),
-                 ... = c("middle", "highschool", ...))
+education <- factor(c("college", "highschool", "college", "middle"),
+                 levels = c("middle", "highschool", "college"))
 
-education <- ...(c("college", "highschool", "college", "middle"),
-                 levels = c("middle", "highschool", "college"),
-                 ...)
+education <- factor(c("college", "highschool", "college", "middle"),
+                 levels = c("middle", "highschool", "college"),ordered = TRUE)
 
 ## Data Frames
 
-... data.frame(...)
+df <- data.frame(education, counts)
 
 ## Exercise 2
 
-...
+species <- (c("human", "monkey", "bird", "butterfly"))
+abund <- (c("5", "3", "10", "13"))
 
 ## Load data into R
 
-plots <- ...(...)
-animals <- ...(...)
+plots <- read.csv("../data/plots.csv")
+animals <- read.csv("../data/animals.csv")
 
 ## Exercise 3
 
